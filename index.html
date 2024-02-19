@@ -1,12 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <script type="module" src="/main.js"></script>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mozi</title>
+  <script type="module" src="/main.js"></script>
+
+  <style>
+    .container {
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+
+    .NavA:link {
+      color: red;
+    }
+
+    .NavA:hover {
+      color: hotpink;
+    }
+
+    .NavA:active {
+      color: blue;
+    }
+
+    .NavBar {
+      background-color: aqua;
+
+    }
+
+
+    .Contact {
+      background-color: gray;
+      padding-top: 2vh;
+      padding: 1vw;
+    }
+
+    .CCol {
+      display: inline-block;
+      padding: 1rem 1rem;
+      vertical-align: middle;
+    }
+
+    .CHeadline{
+      border-left: 2px solid blue;
+      padding-left: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="NavBar" style="align-items: center;">
+        <img src="" style="float: left;">
+        <a class="NavA" href="./index.html" style="padding-left: 15vw;">Kezdőlap</a>
+        <a class="NavA" href="./lista/index.html" style="padding-left:5vw">Árlista</a>
+        <a class="NavA" href="#contact" style="padding-left:5vw">Elérhetőség</a>
+      </nav>
+    </header>
+    <div class="MainImgs">
+      <button class="NavButton" id="LeftClick"></button>
+      <button class="NavButton" id="RightClick"></button>
+    </div>
+    <div class="RandomInfo">
+
+    </div>
+    <footer class="Contact">
+      <div class="CCol">
+        <p class="CHeadline">
+          Kapcsolat
+        </p>
+        <p class="CInfo">Telefonszám: +12 34 567 8999</p>
+      </div>
+      <div class="CCol">
+        <p class="CHeadline">
+          Készítette:
+        </p>
+        <p class="CInfo">Rábel Bence <br>
+          Szávai Krisztián
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
